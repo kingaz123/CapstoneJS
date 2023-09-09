@@ -1,0 +1,27 @@
+//Vendor (import file scss, riêng file css gắn ở html)
+//Helper
+@import "./Helpers/variables";
+@import "./Helpers/mixin";
+//Base
+@import "Base/reset";
+@import "Base/typography";;
+//responsive: chung cho cả trang web (cái gì chung là nằm trên)
+@import "./Base/responsive";
+//components
+@import "./Components/backToTop";
+@import "./Components/button";
+@import "./Components/card";
+@import "./Components/item";
+@import "./Components/error";
+@import "./Components/popUpMessage";
+//layouts
+@import "./Layouts/header";
+@import "./Layouts/footer";
+
+//Pages
+@import "./Pages/index";
+@import "./Pages/register";
+@import "./Pages/cart";
+@import "./Pages/detail";
+@import "./Pages/login";
+//Theme

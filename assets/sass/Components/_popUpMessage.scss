@@ -1,0 +1,42 @@
+ .message-container {
+    @include title-h3;
+    font-size: $fs-6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-popup;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    .popup-message {
+      display: flex;
+      flex-direction: column;
+      width: 550px;
+      height: 150px;
+      row-gap: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: $bg-primary-darken;
+      border-radius: 10px;
+      scale: 0;
+      transition: all 0.3s ease-in-out;
+      h3 {
+        text-align: center;
+      }
+      button {
+        font-weight: $fw-bold;
+      }
+      &.active {
+        scale: 1;
+      }
+    }
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }

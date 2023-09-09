@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT LINE AWESOME -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- MY STYLE  -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Chi tiết</title>
+</head>
+
+<body>
+    <header>
+        <div class="topHeader">
+            <div class="topHeaderInner">
+                <div class="topHeaderLogo">
+                    <a href="../index.html">
+                        <img src="../assets/img/image 3.png" alt="">
+                    </a>
+                </div>
+                <div class="topHeaderLink">
+                    <button onclick="window.location.href='./login.html'" class="button" style="width: 130px;">
+                        Đăng nhập
+                    </button>
+                    <button onclick="window.location.href='./register.html'" class="button" style="width: 130px;">
+                        Đăng ký
+                    </button>
+                    <span id="userEmail" style="display: none"></span>
+                    <button onclick="logOut()" class="button" id="logoutButton" style="display: none;">
+                        Đăng xuất
+                    </button>
+                </div>
+                <div class="cartInfo" style="display: none">
+                    <a style="margin-left: 30px;" href="./cart.html">
+                        <img src="../assets/img/image 8.png" alt="">
+                    </a>
+                    <span class="cart__number">0</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="navInner">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giày nam
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giày nữ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Giày thể thao
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="detail">
+        <div class="container">
+            <div class="detail__product">
+                <div class="detail__product-img">
+                    <img src="../assets/img/SUPERSTAR_Dark.png" alt="" />
+                </div>
+                <div class="detail__product-description">
+                    <div class="detail__title">
+                        <h3>Superstar Dark</h3>
+                        <p>
+                            Elevate your style and comfort with Superstar Dark. Unleash unstoppable energy in each step.
+                            Say goodbye to heavy feet.
+                        </p>
+                        <p>Giá: $ 350</p>
+                        <div class="detail__shoe-size">Kích thước: <span class="shoe-size">39</span></div>
+                    </div>
+                    <div class="detail__size">
+                        <button class="button-size active">38</button>
+                        <button class="button-size">39</button>
+                        <button class="button-size">40</button>
+                        <button class="button-size">41</button>
+                        <button class="button-size">42</button>
+                    </div>
+                    <div class="detail__button-quantity">
+                        <button class="btn-increase">
+                            <i class="fa fa-arrow-left"></i>
+                        </button>
+                        <span>1</span>
+                        <button class="btn-reduce">
+                            <i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                    <div class="detail__button">
+                        <button class="btn-detail">Thêm vào giỏi hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="message-container">
+            <div class="popup-message">
+                <h3 class="message-popup"></h3>
+                <button class="button close-popup">OK</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__middle">
+                <div class="footer__item">
+                    <ul class="footer__contact">
+                        <li><i class="fa fa-phone"></i>
+                            <span>
+                                0905005005
+                                <br>
+                                0865123123
+                            </span>
+                        </li>
+                        <li><i class="fa fa-envelope"></i>
+                            <span>
+                                info@shopgiaydep.com
+                                <br>
+                                services@shopgiaydep.com
+                            </span>
+                        </li>
+                        <li><i class="fas fa-map-marker-alt"></i>
+                            <span>
+                                Địa chỉ: 15 Nguyễn Hữu Dật
+                                <br>
+                                Thành phố Đà Nẵng
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Các liên kết</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Trang chủ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Giới thiệu</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Sản phẩm</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Đội ngũ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Danh mục sản phẩm</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Nam</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Nữ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Trẻ em</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Phụ kiện</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Giảm giá</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h3>Thông tin khác</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Chính sách đổi trả</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Chính sách bảo mật</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Điều khoản & Điều kiện</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Hỗ trợ</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i> Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__content">
+                <div class="footer__text">
+                    Bản quyền © 2023 <span>Shop Giày Đẹp</span> . Đã đăng ký bản quyền.
+                </div>
+                <div class="footer__icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 'back to top' button -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+    <!--! Back to top JS -->
+    <script src="../controller/backToTop/util.js"></script>
+    <script src="../controller/backToTop/main.js"></script>
+    <!-- Thư viên anxios -->
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <!-- My JS -->
+    <script src="../controller/PopupModal/popUp.js"></script>
+    <script src="../controller/logout.js"></script>
+    <script src="../controller/storage.js"></script>
+    <script src="../model/ProductList.js"></script>
+    <script src="../model/Product.js"></script>
+    <script src="../controller/totalItems.js"></script>
+    <script src="../controller/detail.js"></script>
+</body>
+
+</html>

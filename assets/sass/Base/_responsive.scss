@@ -1,0 +1,23 @@
+/* Kiểu CSS cho màn hình desktop (lớn hơn hoặc bằng 1024px) */
+@media (min-width: 1024px) {
+  /* Điều chỉnh kiểu CSS cho màn hình desktop tại đây */
+  .featureItem {
+    width: 33.33%;
+  }
+}
+
+/* Kiểu CSS cho máy tính bảng (từ 768px đến 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Điều chỉnh kiểu CSS cho máy tính bảng tại đây */
+  .featureItem {
+    width: 50%;
+  }
+}
+
+/* Kiểu CSS cho điện thoại di động (nhỏ hơn 768px) */
+@media (max-width: 767px) {
+  /* Điều chỉnh kiểu CSS cho điện thoại di động tại đây */
+  .featureItem {
+    width: 100%;
+  }
+}

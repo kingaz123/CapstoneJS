@@ -1,0 +1,188 @@
+.carousel {
+    .carouselContainer {
+        width: 100%;
+        position: relative;
+        background-image: url(../img/image\ 6.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center bottom;
+        height: 550px;
+        .owl-carousel {
+            width: 80%;
+            margin: auto;
+            position: static;
+            .itemInner {
+                position: relative;
+                img {
+                    width: 100%;
+                    transform: scale(80%);
+                }
+                .itemDetail {
+  position: absolute;
+  display: block;
+  top: 20%;
+  transform: translateY(50%);
+  right: 0;
+
+  h1 {
+    @include font-set($fs-1, $fw-bold); 
+    color: $short-des-color;
+    text-transform: uppercase;
+    margin-top: -20px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    @include font-set($fs-4, $fw-semibold); 
+    color: $more-gray-color;
+    line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+  }
+}
+
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            display: block;
+            top: 50%;
+            transform: translateY(50%);
+            left: 0;
+            width: 100%;
+            button {
+                width: 66.13px;
+                height: 45.71px;
+                font-size: 0;
+                &.owl-prev {
+                    position: absolute;
+                    display: block;
+                    left: 54px;
+                    top: 0;
+                    background-image: url(../img/Polygon\ 2.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                &.owl-next {
+                    position: absolute;
+                    display: block;
+                    right: 54px;
+                    top: 0;
+                    background-image: url(../img/Polygon\ 1.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                }
+                &:hover {
+                    background-color: unset;
+                }
+            }
+        }
+    }
+}
+
+.feature {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    h1 {
+        text-align: center;
+  font-size: 2rem; 
+  font-weight: bold; 
+  color: $dark-color; 
+  text-transform: uppercase; 
+  letter-spacing: 2px;
+  margin-bottom: 20px; 
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); 
+    }// Canh giữa theo chiều dọc
+  .brand-select {
+    display: flex;
+  justify-content: center; // Canh giữa theo chiều ngang
+  align-items: center; // Canh giữa theo chiều dọc
+  select {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 20px;
+    background: $gradient;
+    color: $black-color;
+    &:focus {
+      border-color: $blue-color; 
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    }
+    &:hover {
+      border-color: $gray-color; 
+    }
+  }
+}
+
+
+    .featureContainer {
+        padding-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        .featureItem {
+            width: 33%;
+            padding: 33.5px;
+            .itemInner {
+                background-color: $feature-color;
+                &:hover {
+                    .topImg img {
+                        transform: scale(110%);
+                    }
+                }
+                .topImg {
+                    padding: 0 20px;
+                    text-align: center;
+                    img {
+                        transition: .5s;
+                        width: 100%;
+                    }
+                }
+                .detail {
+                    padding: 0 20px;
+                    h3 {
+                        @include font-set(24px, 300);
+                        line-height: 29.05px;
+                    }
+                    p {
+                        @include font-set(20px, 300);
+                        line-height: 24.2px;
+                        color: $short-des-color;
+                        margin: 8px 0;
+                    }
+                }
+                .footer {
+                    display: flex;
+                    line-height: 64px;
+                    a {
+                        width: 50%;
+                        height: 64px;
+                        @include font-set(24px, 200);
+                        color: $black-color;
+                        background-color: $button-background;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                    span {
+                        background-color: $price-background;
+                        width: 50%;
+                        @include font-set(24px, 600);
+                        color: $black-color;
+                        text-align: right;
+                        padding-right: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

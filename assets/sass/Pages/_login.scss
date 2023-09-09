@@ -1,0 +1,67 @@
+.loginForm {
+  width: $main-width;
+  padding: 70px 0;
+  h1 {
+    @include font-set(40px, $fw-normal);
+    line-height: 48.41px;
+    text-transform: capitalize;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .formInner {
+    width: $large-screen-inner-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    .formItem {
+      width: 100%;
+      padding: 0 30px 10px 30px;
+      position: relative;
+      margin-top: 20px;
+      input {
+        width: 100%;
+        border-radius: 5px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: $black-color;
+        @include font-set(25px, $fw-normal);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        padding-left: 10px;
+        margin-bottom: 10px;
+        &::placeholder {
+          color: $more-gray-color;
+          @include font-set(25px, $fw-normal);
+          line-height: 36.31px;
+        }
+      }
+    }
+    .formItem:last-child {
+      padding-bottom: 20px;
+    }
+    .formItem button {
+      background-color: $purple-color;
+      color: $c-secondary;
+      @include font-set(22px, $fw-normal);
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      &:disabled {
+        background-color: $gray-color;
+        color: $c-secondary;
+      }
+    }
+  }
+  .registerLink {
+    text-align: center;
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+      color: $c-primary;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

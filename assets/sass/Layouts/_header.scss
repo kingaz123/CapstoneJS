@@ -1,0 +1,123 @@
+.topHeader {
+    padding: 0 0;
+    background-color: $black-color;
+    color: $c-secondary;
+    .topHeaderInner {
+        width: $large-screen-inner-width;
+        height: 100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .topHeaderLogo {
+            width: 50%;
+            img {
+                width: 110px;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .topHeaderLink {
+            #userEmail {
+                color: $c-secondary;
+        }
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;
+        }
+        .cartInfo {
+            margin-right: 15px;
+            position: relative;
+
+            }
+            .cart__number {
+            background-color: $c-secondary;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: $black-color;
+            text-align: center;
+            line-height: 25px;
+            position: absolute;
+            top: 10px;
+            left: 65px;
+        }
+    }
+}
+
+nav {
+    width: $main-width;
+    height: $header-main-height;
+    background-color: $c-secondary;
+    .navInner {
+        width: $large-screen-inner-width;
+        height: inherit;
+        margin: auto;
+        ul {
+            list-style-type: none;
+            height: inherit;
+            li {
+                position: relative;
+                height: inherit;
+                display: inline-block;
+                margin-right: 20px;
+                vertical-align: middle;
+                line-height: $header-main-height;
+                a {
+                    text-decoration: none;
+                    color: $black-color;
+                    line-height: 24.2px;
+                    @include font-set(20px, $fw-normal);
+                }
+                 &::before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background-color: $button-background;
+                    height: 4px;
+                    width: 100%;
+                    visibility: hidden;
+                }
+                &::after {
+                    // margin: -10px 0;
+                    margin-top: -4px;
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background-color: $button-background;
+                    height: 4px;
+                    width: 100%;
+                    visibility: hidden;
+                }
+                &:hover::before {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background-color: $light-blue-color;
+                    height: 4px;
+                    width: 100%;
+                    visibility: visible;
+                }
+
+                &:hover::after {
+                    margin-top: -4px;
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    background-color: $light-blue-color;
+                    height: 4px;
+                    width: 100%;
+                    visibility: visible;
+                }
+                &.active {
+                    &::before, &::after {
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}

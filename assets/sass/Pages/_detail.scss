@@ -1,0 +1,118 @@
+/* Detail Product */
+.detail {
+  margin: 70px 0;
+  background-color: transparent;
+  .container {
+    .detail__product {
+      padding: 30px 0;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      column-gap: 40px;
+      .detail__product-img {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        background-color: $c-secondary;
+        padding: 35px;
+        margin-right: 30px;
+        @include style-card;
+        &:hover {transform: scale(1.2);};
+        img {
+          width: 100%;
+        }
+      }
+      .detail__product-description {
+        width: 60%;
+        .detail__title {
+          h3 {
+            @include title;
+            font-weight: $fw-bold;
+          }
+          p:first-of-type {
+            margin: 15px 0;
+            color: $black-color;
+            font-weight: $fw-normal;
+          }
+          p:last-of-type {
+            margin-bottom: 15px;
+            color: $black-color;
+            font-weight: $fw-semibold;
+            span {color: $c-secondary}
+          }
+          .detail__shoe-size {
+            margin-bottom: 15px;
+            color: $black-color;
+            font-weight: $fw-semibold;
+            span {font-weight: normal}
+          }
+        }
+        .detail__size {
+          border: 1px solid rgba(126, 126, 126, 0.1);
+          padding: 10px 0;
+          border-left: none;
+          border-right: none;
+          .button-size {
+            display: inline-block;
+            margin-right: 10px;
+            width: 25px;
+            height: 25px;
+            border-radius: 15%;
+            font-weight: $fw-semibold;
+            border: none;
+            cursor: pointer;
+            background-color: $bg-secondary-light;
+            color: $bg-secondary;
+            &:hover {
+            background-color: $black-color;
+            color: $c-secondary;
+        }
+          }
+          .active {
+            background-color: $c-primary;
+            color: $bg-primary-darken;
+          }
+        }
+        .detail__button-quantity {
+          margin: 30px 0;
+          color: $black-color;
+          background-color: transparent;
+          border: 1px solid $button-background;
+          border-radius: 20px;
+          padding: 2px 0;
+          display: inline-flex;
+          justify-content: space-around;
+          align-items: center;
+          button {
+            padding: 2px 20px;
+            font-size: $fs-6;
+            background-color: transparent;
+            color: $black-color;
+            border: none;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+              color: $c-primary;
+            }
+          }
+          span {
+            font-size: $fs-5;
+            margin: 0 10px;
+            width: 20px;
+            text-align: center;
+          }
+        }
+        .detail__button {
+          button {
+            @extend .button;
+            &:hover {
+              background-color: $bg-secondary;
+              color: $c-primary;
+              border-color: $c-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
