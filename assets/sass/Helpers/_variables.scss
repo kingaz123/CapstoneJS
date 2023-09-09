@@ -1,3 +1,9 @@
+// responsive
+$screen-xs-max: 575px;
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
+
 //color
 $c-primary: #ffc014;
 $c-secondary: #fff;
@@ -28,14 +34,12 @@ $gradient: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
 $gradient-radial: linear-gradient(#dfb241, #175401);
 
 //Font weight
-
 $fw-light: 300;
 $fw-normal: 400;
 $fw-semibold: 500;
 $fw-bold: 700;
 
 /* Font size */
-
 $fs-1: 34px;
 $fs-2: 30px;
 $fs-3: 26px;

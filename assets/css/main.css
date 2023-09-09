@@ -26,25 +26,41 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* Kiểu CSS cho màn hình desktop (lớn hơn hoặc bằng 1024px) */
-@media (min-width: 1024px) {
-  /* Điều chỉnh kiểu CSS cho màn hình desktop tại đây */
-  .featureItem {
-    width: 33.33%;
+/* Code responsive */
+/* CSS cho màn hình bé hơn hoặc bằng 1199px */
+@media screen and (max-width: 1199px) {
+  .carousel {
+    display: none;
   }
 }
-/* Kiểu CSS cho máy tính bảng (từ 768px đến 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Điều chỉnh kiểu CSS cho máy tính bảng tại đây */
-  .featureItem {
-    width: 50%;
+/* CSS cho màn hình bé hơn hoặc bằng 991px */
+/* CSS cho màn hình bé hơn hoặc bằng 767px */
+@media screen and (max-width: 767px) {
+  header #userEmail {
+    display: none !important;
+  }
+  .featureItem .card {
+    height: 400px;
+  }
+  .featureItem .card img {
+    max-width: 100%; /* Đặt kích thước tối đa là 100% của phần tử cha */
+    height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ khung hình ban đầu */
+  }
+  .footer__bottom {
+    display: none;
   }
 }
-/* Kiểu CSS cho điện thoại di động (nhỏ hơn 768px) */
-@media (max-width: 767px) {
-  /* Điều chỉnh kiểu CSS cho điện thoại di động tại đây */
-  .featureItem {
-    width: 100%;
+/* CSS cho màn hình bé hơn hoặc bằng 575px */
+@media screen and (max-width: 575px) {
+  .carousel {
+    display: none;
+  }
+  .featureItem .card {
+    height: 500px;
+  }
+  .featureItem .card img {
+    max-width: 100%; /* Đặt kích thước tối đa là 100% của phần tử cha */
+    height: auto; /* Tự động tính chiều cao dựa trên tỷ lệ khung hình ban đầu */
   }
 }
 .backToTop {
@@ -400,6 +416,7 @@ footer {
 }
 footer .footer__middle {
   display: flex;
+  flex-wrap: wrap;
   padding: 40px 0;
   position: relative;
 }
@@ -419,6 +436,7 @@ footer .footer__middle .footer__contact i {
 }
 footer .footer__middle .footer__item {
   width: 25%;
+  margin-bottom: 30px;
 }
 footer .footer__middle .footer__item h3 {
   font-size: 24px;
@@ -683,12 +701,11 @@ footer .footer__bottom .footer__content .footer__icon {
 }
 .regForm .formInner {
   width: 80%;
-  display: flex;
   margin: auto;
   flex-wrap: wrap;
 }
 .regForm .formInner .formItem {
-  width: 50%;
+  width: 100%;
   padding: 0 30px 10px 30px;
   position: relative;
   margin-top: 20px;
@@ -734,6 +751,7 @@ footer .footer__bottom .footer__content .footer__icon {
   line-height: 36.31px;
   text-align: left;
   color: #000;
+  margin-right: 30px;
 }
 .regForm .formInner .formItem .formItemInner.formCheckBox .specialCheckBox {
   display: block;
@@ -783,6 +801,7 @@ footer .footer__bottom .footer__content .footer__icon {
 .regForm .formInner .RegFormButton button {
   background-color: #AE18E2;
   color: #fff;
+  width: 150px;
   font-size: 22px;
   font-weight: 400;
   padding: 10px;

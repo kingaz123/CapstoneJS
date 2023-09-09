@@ -18,7 +18,7 @@ function showProductList(products) {
   var productsHtml = "";
 
   products.forEach(function (item) {
-    productsHtml += `<div class="featureItem">
+    productsHtml += `<div class="featureItem col-12 col-sm-6 col-lg-4">
       <div class="itemInner card">
         <a href="./view/detail.html?productid=${item.id}">
           <div class="card-img">

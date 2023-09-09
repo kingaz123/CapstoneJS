@@ -8,12 +8,11 @@
         text-align: center;
     }
     .formInner {
-        width: $large-screen-inner-width; 
-        display: flex;
+        width: $large-screen-inner-width;
         margin: auto;
         flex-wrap: wrap;
         .formItem {
-            width: 50%;
+            width: 100%;
             padding: 0 30px 10px 30px;
             position: relative;
             margin-top: 20px;
@@ -44,7 +43,6 @@
                         color: $more-gray-color;
                         @include font-set(25px, $fw-normal);
                         line-height: 36.31px;
-                        
                     }
                 }
                 &.formCheckBox::after {
@@ -56,6 +54,7 @@
                         line-height: 36.31px;
                         text-align: left;
                         color: $black-color;
+                        margin-right: 30px;
                     }
                     .specialCheckBox {
                         display: block;
@@ -102,20 +101,21 @@
             }
         }
         .RegFormButton {
-        width: 50%;
-        padding: 30px 0 50px 150px;
-        button {
-            background-color: $purple-color;
-            color: $c-secondary;
-            @include font-set(22px, $fw-normal);
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            &:disabled {
-                background-color: $gray-color;
+            width: 50%;
+            padding: 30px 0 50px 150px;
+            button {
+                background-color: $purple-color;
                 color: $c-secondary;
+                width: 150px;
+                @include font-set(22px, $fw-normal);
+                padding: 10px;
+                border: none;
+                cursor: pointer;
+                &:disabled {
+                    background-color: $gray-color;
+                    color: $c-secondary;
+                }
             }
         }
-    }
     }
 }

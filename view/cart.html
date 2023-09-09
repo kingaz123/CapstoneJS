@@ -17,6 +17,8 @@
   <!-- FONT LINE AWESOME -->
   <link rel="stylesheet"
     href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <!-- BOOTSTRAP (chỉ sử dụng grid system của bootstrap để làm responsive)-->
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap-grid.min.css">
   <!-- MY STYLE  -->
   <link rel="stylesheet" href="../assets/css/main.css">
   <title>Giỏ hàng</title>
@@ -61,11 +63,6 @@
           <li>
             <a href="#">
               Giày nữ
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              Giày thể thao
             </a>
           </li>
         </ul>
@@ -129,24 +126,27 @@
   </section>
   <footer>
     <div class="container">
-      <div class="footer__middle">
-        <div class="footer__item">
+      <div class="footer__middle row">
+        <div class="footer__item col-12 col-md-6 col-lg-3">
           <ul class="footer__contact">
-            <li><i class="fa fa-phone"></i>
+            <li>
+              <i class="fa fa-phone"></i>
               <span>
                 0905005005
                 <br>
                 0865123123
               </span>
             </li>
-            <li><i class="fa fa-envelope"></i>
+            <li>
+              <i class="fa fa-envelope"></i>
               <span>
                 info@shopgiaydep.com
                 <br>
                 services@shopgiaydep.com
               </span>
             </li>
-            <li><i class="fas fa-map-marker-alt"></i>
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
               <span>
                 Địa chỉ: 15 Nguyễn Hữu Dật
                 <br>
@@ -155,7 +155,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__item">
+        <div class="footer__item col-12 col-md-6 col-lg-3">
           <h3>Các liên kết</h3>
           <ul>
             <li><a href="#"><i class="fa fa-angle-right"></i> Trang chủ</a></li>
@@ -165,7 +165,7 @@
             <li><a href="#"><i class="fa fa-angle-right"></i> Blog</a></li>
           </ul>
         </div>
-        <div class="footer__item">
+        <div class="footer__item col-12 col-md-6 col-lg-3">
           <h3>Danh mục sản phẩm</h3>
           <ul>
             <li><a href="#"><i class="fa fa-angle-right"></i> Nam</a></li>
@@ -175,7 +175,7 @@
             <li><a href="#"><i class="fa fa-angle-right"></i> Giảm giá</a></li>
           </ul>
         </div>
-        <div class="footer__item">
+        <div class="footer__item col-12 col-md-6 col-lg-3">
           <h3>Thông tin khác</h3>
           <ul>
             <li><a href="#"><i class="fa fa-angle-right"></i> Chính sách đổi trả</a></li>
