@@ -1,6 +1,6 @@
 # Thông tin cơ bản
 
-- Tên dự án: Shoe Shoe - Capstone JS
+- Tên dự án: Shoe Shop - Capstone JS
 - Link source code của nhóm: https://github.com/kingaz123/CapstoneJS
 - Link deploy dự án: https://kingaz123.github.io/CapstoneJS/
 - Link Youtube: https://www.youtube.com/watch?v=Mbih2xocrWc
