@@ -33,17 +33,6 @@ function checkValidPassword() {
     return validation.checkRong(password, "passwordError") && validation.passwordCheck(password, "passwordError", "Mật khẩu phải từ 5-15 ký tự (chứa ít nhất 1 ký tự số, 1 ký tự in hoa, 1 ký tự đặc biệt)");
 }
 
-function checkValidConfirmPassword() {
-    var password = getEle("password").value;
-    var passwordConfirm = getEle("confirm").value;
-    if (password === passwordConfirm) {
-        getEle("confirmError").innerText = "";
-        return true;
-    } else {
-        showErr("confirmError", "(*) Password nhập lại không đúng!");
-        return false;
-    }
-}
 
 function checkValidPhone() {
     var phone = getEle("phone").value;
@@ -54,9 +43,8 @@ function getInfo() {
     var emailValid = checkValidEmail();
     var nameValid = checkValidName();
     var passwordValid = checkValidPassword();
-    var confirmPasswordValid = checkValidConfirmPassword();
     var phoneValid = checkValidPhone();
-    var isValid = emailValid && nameValid && passwordValid && confirmPasswordValid && phoneValid;
+    var isValid = emailValid && nameValid && passwordValid && phoneValid;
 
     if (isValid) {
         var userRegister = new UserRegister(
@@ -74,7 +62,6 @@ function getInfo() {
 document.getElementById("email").onkeyup = checkValidEmail;
 document.getElementById("name").onkeyup = checkValidName;
 document.getElementById("password").onkeyup = checkValidPassword;
-document.getElementById("confirm").onkeyup = checkValidConfirmPassword;
 document.getElementById("phone").onkeyup = checkValidPhone;
 
 // Gắn sự kiện click cho nút đăng ký
