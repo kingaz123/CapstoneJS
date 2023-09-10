@@ -74,6 +74,7 @@ registerButton.addEventListener("click", function (event) {
     });
     promise.then(function (result) {
         showPopup(result.data.message)
+        clearForm()
     });
     promise.catch(function (err) {
         showPopup(err.response.data.message);
