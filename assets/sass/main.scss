@@ -4,9 +4,8 @@
 @import "./Helpers/mixin";
 //Base
 @import "Base/reset";
-@import "Base/typography";;
-//responsive: chung cho cả trang web (cái gì chung là nằm trên)
-@import "./Base/responsive";
+@import "Base/typography";
+
 //components
 @import "./Components/backToTop";
 @import "./Components/button";
@@ -14,6 +13,7 @@
 @import "./Components/item";
 @import "./Components/error";
 @import "./Components/popUpMessage";
+@import "./Components/togglePassword";
 //layouts
 @import "./Layouts/header";
 @import "./Layouts/footer";
@@ -25,3 +25,6 @@
 @import "./Pages/detail";
 @import "./Pages/login";
 //Theme
+
+//responsive: chung cho cả trang web (dể ở dưới đề đè code các phần trên)
+@import "./Base/responsive";

@@ -1,5 +1,6 @@
 .error {
-        width: 100%;
-        color: $red-color;
-        @include font-set($fs-6, $fw-semibold);
-      }
+  width: 100%;
+  height: 30px;
+  color: $red-color;
+  @include font-set($fs-6, $fw-semibold);
+}

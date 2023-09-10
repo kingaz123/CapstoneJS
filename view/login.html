@@ -81,7 +81,8 @@
         <div class="error" id="loginEmailError"></div>
       </div>
       <div class="formItem">
-        <input type="password" placeholder="Mật khẩu" id="loginPassword" autocomplete="off">
+        <input type="password" placeholder="Mật khẩu" id="loginPassword" class="formPassword" autocomplete="off">
+        <i class="fa-solid fa-eye" id="togglePassword"></i>
         <div class="error" id="loginPasswordError"></div>
       </div>
       <div class="formItem">
@@ -98,7 +99,6 @@
       </div>
     </div>
   </section>
-
   <footer>
     <div class="container">
       <div class="footer__middle row">
@@ -115,15 +115,15 @@
             <li>
               <i class="fa fa-envelope"></i>
               <span>
-                info@shopgiaydep.com
+                info@gmail.com
                 <br>
-                services@shopgiaydep.com
+                services@email.com
               </span>
             </li>
             <li>
               <i class="fas fa-map-marker-alt"></i>
               <span>
-                Địa chỉ: 15 Nguyễn Hữu Dật
+                Địa chỉ: 15 Lê Lai
                 <br>
                 Thành phố Đà Nẵng
               </span>
@@ -141,7 +141,7 @@
           </ul>
         </div>
         <div class="footer__item col-12 col-md-6 col-lg-3">
-          <h3>Danh mục sản phẩm</h3>
+          <h3>Sản phẩm</h3>
           <ul>
             <li><a href="#"><i class="fa fa-angle-right"></i> Nam</a></li>
             <li><a href="#"><i class="fa fa-angle-right"></i> Nữ</a></li>
@@ -186,6 +186,7 @@
   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
   <!-- My JS -->
   <script src="../controller/PopupModal/popUp.js"></script>
+  <script src="../controller/togglePassword.js"></script>
   <script src="../controller/logout.js"></script>
   <script src="../model/ProductList.js"></script>
   <script src="../model/Product.js"></script>

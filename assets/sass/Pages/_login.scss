@@ -15,7 +15,7 @@
     align-items: center;
     margin: auto;
     .formItem {
-      width: 100%;
+      width: 80%;
       padding: 0 30px 10px 30px;
       position: relative;
       margin-top: 20px;
@@ -35,6 +35,13 @@
           @include font-set(25px, $fw-normal);
           line-height: 36.31px;
         }
+      }
+      #togglePassword {
+        position: absolute;
+        top: 30%;
+        right: 40px;
+        transform: translateY(-50%);
+        cursor: pointer;
       }
     }
     .formItem:last-child {

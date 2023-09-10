@@ -30,6 +30,32 @@
 }
 /* CSS cho màn hình bé hơn hoặc bằng 575px */
 @media screen and (max-width: $screen-xs-max) {
+  header {
+    button {
+      width: 100px;
+      font-size: 13px !important;
+      margin-right: 0;
+      padding: 0;
+    }
+  }
+  .formCheckBox {
+    span {
+      margin-bottom: 20px;
+    }
+  }
+  .regForm {
+    .formItemInner {
+      #emailError,
+      #passwordError {
+        height: 60px;
+      }
+    }
+  }
+  .feature {
+    h1 {
+      font-size: $fs-5 !important;
+    }
+  }
   .carousel {
     display: none;
   }
